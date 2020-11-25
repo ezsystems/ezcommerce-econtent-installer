@@ -1,0 +1,14 @@
+{
+    "name": "ezsystems/ezcommerce-econtent-installer",
+    "description": "Ibexa Commerce eContent data installer",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Ibexa dev-team",
+            "homepage": "https://github.com/ezsystems/ezcommerce/contributors"
+        }
+    ],
+    "require": {
+    }
+}
