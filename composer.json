@@ -10,6 +10,11 @@
             "homepage": "https://github.com/ezsystems/ezcommerce/contributors"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Ibexa\\Platform\\Bundle\\Commerce\\EContentInstaller\\": "src/bundle"
+        }
+    },
     "require": {
         "php": "^7.3"
     },
