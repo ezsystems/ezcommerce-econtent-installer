@@ -17,6 +17,7 @@
     },
     "require": {
         "php": "^7.3",
+        "ezsystems/ezplatform-kernel": "~1.2.0",
         "symfony/http-kernel": "^5.1"
     },
     "require-dev": {
