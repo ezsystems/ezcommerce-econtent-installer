@@ -18,8 +18,14 @@
     "require": {
         "php": "^7.3"
     },
+    "require-dev": {
+        "ezsystems/ezplatform-code-style": "^0.2.0"
+    },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
     },
     "extra": {
         "branch-alias": {
