@@ -3,7 +3,7 @@
     "description": "Ibexa Commerce eContent data installer",
     "minimum-stability": "stable",
     "license": "proprietary",
-    "type": "ibexa-bundle",
+    "type": "symfony-bundle",
     "authors": [
         {
             "name": "Ibexa dev-team",
