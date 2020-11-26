@@ -17,6 +17,7 @@
     },
     "require": {
         "php": "^7.3",
+        "ezsystems/ezcommerce-demo-assets": "~1.0.0",
         "ezsystems/ezplatform-kernel": "~1.2.0",
         "symfony/http-kernel": "^5.1"
     },
