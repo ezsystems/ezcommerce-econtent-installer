@@ -4,8 +4,22 @@ This package contains eContent sample data installer for testing purposes.
 
 ## Installation
 
+1. Install the package
+    ```
+    composer require ezsystems/ezcommerce-econtent-installer
+    ```
+
+1. Enable the bundle in your `config/bundles.php`:
+    ```php
+    Ibexa\Platform\Bundle\Commerce\EContentInstaller\IbexaPlatformCommerceEContentInstallerBundle::class => ['all' => true],    
+    ```
+   
+## Usage
+
+To install eContent demo data use the following Symfony command:
+
 ```
-composer require ezsystems/ezcommerce-econtent-installer
+php bin/console ezplatform:install commerce-econtent-demo
 ``` 
 
 ## COPYRIGHT
