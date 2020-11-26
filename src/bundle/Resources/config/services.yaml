@@ -1,0 +1,20 @@
+parameters:
+    ibexa.commerce.installer.econtent.demo_assets_path: '%kernel.project_dir%/vendor/ezsystems/ezcommerce-demo-assets/assets/product_images'
+    ibexa.commerce.installer.econtent.binary_files_path: '%webroot_dir%/var/assets/product_images'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Ibexa\Platform\Commerce\EContentInstaller\Installer\EContentDemoInstaller:
+        parent: EzSystems\PlatformInstallerBundle\Installer\DbBasedInstaller
+        arguments:
+            $db: '@ezpublish.persistence.connection'
+            $configResolver: '@ezpublish.config.resolver'
+            $demoDataDumpFilePath: '@=service("kernel").locateResource("@IbexaPlatformCommerceEContentInstallerBundle/Resources/migrations/demo/econtent_demo.sql")'
+            $binaryFilesSrcPath: '%ibexa.commerce.installer.econtent.demo_assets_path%'
+            $binaryFilesDstPath: '%ibexa.commerce.installer.econtent.binary_files_path%'
+        tags:
+            - { name: ezplatform.installer, type: commerce-econtent-demo }
