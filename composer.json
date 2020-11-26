@@ -12,7 +12,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ibexa\\Platform\\Bundle\\Commerce\\EContentInstaller\\": "src/bundle"
+            "Ibexa\\Platform\\Bundle\\Commerce\\EContentInstaller\\": "src/bundle",
+            "Ibexa\\Platform\\Commerce\\EContentInstaller\\": "src/lib"
         }
     },
     "require": {
