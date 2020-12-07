@@ -3,14 +3,33 @@
     "description": "Ibexa Commerce eContent data installer",
     "minimum-stability": "stable",
     "license": "proprietary",
-    "type": "ibexa-bundle",
+    "type": "symfony-bundle",
     "authors": [
         {
             "name": "Ibexa dev-team",
             "homepage": "https://github.com/ezsystems/ezcommerce/contributors"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Ibexa\\Platform\\Bundle\\Commerce\\EContentInstaller\\": "src/bundle",
+            "Ibexa\\Platform\\Commerce\\EContentInstaller\\": "src/lib"
+        }
+    },
     "require": {
+        "php": "^7.3",
+        "ezsystems/ezcommerce-demo-assets": "~1.0.0",
+        "ezsystems/ezplatform-kernel": "~1.2.0",
+        "symfony/http-kernel": "^5.1"
+    },
+    "require-dev": {
+        "ezsystems/ezplatform-code-style": "^0.2.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
     },
     "extra": {
         "branch-alias": {
